@@ -1,0 +1,273 @@
+/* --------------------------
+  Base Styles
+--------------------------- */
+
+
+body {
+    font-family: 'Varela Round', sans-serif;
+    background-color: #FAFAFA;
+    text-align: center;
+    margin: 0;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* --------------------------
+  Header & Nav Rules
+--------------------------- */
+
+.main-header {
+	margin: auto;
+}
+
+.nav-list li {
+  margin: 0 0 .5em 0;
+  
+}
+
+.nav-list a {
+	display: block;
+	background-color: #FFFFFF;
+    color: black;
+	font-size: 1.125em;
+	font-weight: bold;
+	text-align: center;
+	padding: .4em;
+    text-transform: uppercase;
+	
+}
+
+
+.profile-pic {
+    border-radius: 50%;
+}
+
+/* --------------------------
+  Portfolio Rules
+--------------------------- */
+
+
+
+.portfolio {
+    background-color: #FFFFFF;
+    padding-bottom: 2em;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.portfolio h3 {
+    padding-top: 1.5em;
+}
+
+.portfolio p,
+footer p {
+    width: 85%;
+    margin: 0 auto 1em auto;
+}
+
+
+/* --------------------------
+  Footer Rules
+--------------------------- */
+
+
+footer {
+    padding-top: 1.5em;
+}
+
+.contact-info a,
+.bottom-nav a{
+    color: black;
+    font-weight: bold;
+
+}
+
+.contact-info a {
+    margin-left: 1em;
+}
+
+.footer-end {
+    font-weight: bold;
+    text-align: left;       
+}
+
+.footer-end {
+    border-top: solid thin gray;
+    padding-top: 1em;
+}
+
+
+.bottom-nav-mobile {
+    text-transform: uppercase;
+    text-align: right;
+    
+}
+
+.bottom-nav {
+    display: none;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+
+
+/* --------------------------
+  Responsive Rules
+--------------------------- */
+
+.main-header,
+.nav-list,
+.sub-header,
+.portfolio-gallery {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.profile-pic img {
+    max-width: 80%;
+    height: auto;
+}
+
+.responsive img {
+    max-width: 90%;
+    height: auto;
+}
+
+.footer-end {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+/****************
+MEDIA QUERIES
+****************/
+
+@media only screen and (min-width: 768px) {
+    
+    a:hover {
+        border-bottom: solid thin black;
+    }
+    
+    .nav-list {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .nav-list a {
+        background-color: inherit;
+        
+    }
+    
+    .portfolio-gallery {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+    
+    
+    .sub-header {
+        
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    
+    .bio {
+        text-align: left;
+        font-size: 1.3em;   
+    }
+    
+    .profile-pic  {
+        text-align: right;
+        margin-left: 5em;
+        
+    }
+    
+    .responsive {
+        max-width: 49%;
+    }
+    
+    
+    .profile-pic img {
+        max-width: none;
+    }
+    
+    .bottom-nav-mobile {
+        display: none;
+    }
+    
+    .bottom-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    .bottom-nav li {
+        margin-left: 2em;
+    }
+   
+    
+ 
+}
+    
+    
+
+
+@media only screen and (min-width: 1024px) {
+     
+    .main-header,
+    .nav {
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    
+
+    
+	.daphne-name {
+		margin-right: auto;
+	}
+	.nav-list {
+		margin: 0;
+		align-self: center;
+        width: 20%;
+	}
+	.nav-list li {
+		margin-left: .65em;
+		
+	}
+    .responsive {
+        
+        max-width: 32%;
+
+    }
+}
+
+
+
+
+
